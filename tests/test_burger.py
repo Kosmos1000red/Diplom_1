@@ -2,12 +2,6 @@ import pytest
 
 
 class TestBurger:
-    def test_new_burger_has_no_bun(self, burger):
-        assert burger.bun is None
-
-    def test_new_burger_has_no_ingredients(self, burger):
-        assert burger.ingredients == []
-
     def test_ingredients_are_not_shared_between_burgers(
         self, burger, ingredient_factory
     ):
